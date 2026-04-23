@@ -1,0 +1,26 @@
+# Cloudflare Worker and Pages configuration for SvelteKit
+name = "adguard-blocklists"
+main = ".svelte-kit/cloudflare/_worker.js"
+compatibility_date = "2026-04-23"
+
+# Optional: enable Node.js APIs polyfill
+# compatibility_flags = ["nodejs_compat"]
+
+[assets]
+binding = "ASSETS"
+directory = "static"
+
+# Environment variables (example)
+#[vars]
+#PUBLIC_EXAMPLE = "hello"
+
+# Pages configuration (optional; you can also pass --project-name at deploy time)
+#[pages]
+#project_name = "adguard-blocklists"
+
+[observability]
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
