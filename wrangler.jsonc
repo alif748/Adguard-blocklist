@@ -1,0 +1,9 @@
+{
+  "name": "adguard-blocklists",
+  "main": ".svelte-kit/cloudflare/_worker.js",
+  "compatibility_date": "2026-04-24",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": ".svelte-kit/cloudflare"
+  }
+}
